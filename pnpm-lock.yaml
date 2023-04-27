@@ -1,0 +1,81 @@
+lockfileVersion: '6.0'
+
+dependencies:
+  '@netlify/functions':
+    specifier: ^1.4.0
+    version: 1.4.0
+  '@sendgrid/mail':
+    specifier: ^7.7.0
+    version: 7.7.0
+
+devDependencies:
+  '@types/node':
+    specifier: ^18.16.2
+    version: 18.16.2
+
+packages:
+
+  /@netlify/functions@1.4.0:
+    resolution: {integrity: sha512-gy7ULTIRroc2/jyFVGx1djCmmBMVisIwrvkqggq5B6iDcInRSy2Tpkm+V5C63hKJVkNRskKWtLQKm9ecCaQTjA==}
+    engines: {node: '>=8.3.0'}
+    dependencies:
+      is-promise: 4.0.0
+    dev: false
+
+  /@sendgrid/client@7.7.0:
+    resolution: {integrity: sha512-SxH+y8jeAQSnDavrTD0uGDXYIIkFylCo+eDofVmZLQ0f862nnqbC3Vd1ej6b7Le7lboyzQF6F7Fodv02rYspuA==}
+    engines: {node: 6.* || 8.* || >=10.*}
+    dependencies:
+      '@sendgrid/helpers': 7.7.0
+      axios: 0.26.1
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@sendgrid/helpers@7.7.0:
+    resolution: {integrity: sha512-3AsAxfN3GDBcXoZ/y1mzAAbKzTtUZ5+ZrHOmWQ279AuaFXUNCh9bPnRpN504bgveTqoW+11IzPg3I0WVgDINpw==}
+    engines: {node: '>= 6.0.0'}
+    dependencies:
+      deepmerge: 4.3.1
+    dev: false
+
+  /@sendgrid/mail@7.7.0:
+    resolution: {integrity: sha512-5+nApPE9wINBvHSUxwOxkkQqM/IAAaBYoP9hw7WwgDNQPxraruVqHizeTitVtKGiqWCKm2mnjh4XGN3fvFLqaw==}
+    engines: {node: 6.* || 8.* || >=10.*}
+    dependencies:
+      '@sendgrid/client': 7.7.0
+      '@sendgrid/helpers': 7.7.0
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /@types/node@18.16.2:
+    resolution: {integrity: sha512-GQW/JL/5Fz/0I8RpeBG9lKp0+aNcXEaVL71c0D2Q0QHDTFvlYKT7an0onCUXj85anv7b4/WesqdfchLc0jtsCg==}
+    dev: true
+
+  /axios@0.26.1:
+    resolution: {integrity: sha512-fPwcX4EvnSHuInCMItEhAGnaSEXRBjtzh9fOtsE6E1G6p7vl7edEeZe11QHf18+6+9gR5PbKV/sGKNaD8YaMeA==}
+    dependencies:
+      follow-redirects: 1.15.2
+    transitivePeerDependencies:
+      - debug
+    dev: false
+
+  /deepmerge@4.3.1:
+    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /follow-redirects@1.15.2:
+    resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
+    dev: false
+
+  /is-promise@4.0.0:
+    resolution: {integrity: sha512-hvpoI6korhJMnej285dSg6nu1+e6uxs7zG3BYAm5byqDsgJNWwxzM6z6iZiAgQR4TJ30JmBTOwqZUw3WlyH3AQ==}
+    dev: false
